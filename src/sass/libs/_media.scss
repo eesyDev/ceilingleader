@@ -451,7 +451,6 @@
         grid-template-columns: .08fr .15fr 3em 1.2fr 0.2fr .2fr .4fr 2em;
     }
     .promo {
-        min-height: 600px;
         &-slider {
             min-height: 100vh;
         }
@@ -604,10 +603,6 @@
             padding-left: 50%;
         }
         &-woman {
-            // height: 600px;
-            // margin-top: 5.7em;
-            // width: 64%;
-            // margin-right: 0;
             display: none;
         }
         &-form {
@@ -937,6 +932,9 @@
 }
 
 @media (max-width: 599px) {
+    .header-mobile {
+        display: block;
+    }
     input[type='range']::-webkit-slider-runnable-track {
         margin-top: 5px;
     }
@@ -956,7 +954,6 @@
         font-size: 1.4em;
     }
     .promo {
-        min-height: 580px;
         &-overlay {
             grid-template-rows: 20vw 17em 2em 17vw 1em auto;
             grid-template-columns: 14vw 1fr 14vw;
@@ -1194,7 +1191,9 @@
             width: 100%;
             height: 100px;
             img {
-                transform: translate(0, 15px);
+                transform: translate(0, 9px);
+                width: 87px;
+                height: 68px;
             }
 
         }
@@ -1246,6 +1245,9 @@
                 }
             }
         }
+    }
+    .modal-no-location .location-layer {
+        height: 50%;
     }
     
     .exit-layer {
@@ -1305,6 +1307,11 @@
         }
     }
     .choice {
+        &-subgrid {
+            .subgrid-right {
+                width: 34%;
+            }
+        }
         .social-icons {
             display: none;
         }
@@ -1320,9 +1327,27 @@
     .bank .footer-list img {
         transform: translateX(-30px);
     }
+    .modal-no-location {
+        .location-upper {
+            .btn {
+                height: 50px;
+            }
+            form {
+                input {
+                    font-size: 17px;
+                }
+            }
+        }
+        .location-layer p {
+            font-size: 0.9em;
+        }
+    }
 }
 
 @media (max-width: 374px) {
+    .social-icons {
+        display: none;
+    }
     .promo-overlay .title {
         font-size: 1.8em;
     }
@@ -1335,16 +1360,40 @@
         font-size: 17px;
     }
     .promo-overlay {
-        grid-template-rows: 12vw 17em 2em 27vw 1em auto;
+        grid-template-rows: 21vw 10em 2em 27vw 1em auto;
     }
     .calc {
-        grid-template-columns: 1vw .8fr .3fr 1vw;
+        grid-template-columns: 7vw .8fr 0.3fr 4vw;
+        &-layer {
+            height: 180px;
+            .descr {
+                display: none;
+            }
+        }
+        .tape {
+            display: none;
+        }
+        &-sm-grid {
+            grid-template-columns: 23% 2.5% 23% 2.5% 23% 2.5% 23%;
+            grid-template-rows: 6em;
+            p {
+                font-size: 0.5em;
+                overflow: hidden;
+                text-overflow: clip;
+            }
+        }
     }
     .value {
-        grid-template-columns: .5em 1fr .5em;
-    }
-    .value-block {
-        height: 75px;
+        grid-template-columns: 1em 1fr 1em;
+        &-blocks {
+            grid-template-rows: 4em .5em 4em 0em 0em .5em 4em .5em 0em 0em 4em .5em 4.2em;
+            .insert, .profile, .trumpet, .angles {
+                display: none;
+            }
+        }
+        &-block {
+            height: 65px;
+        }
     }
     .choice {
         &-subtitle {
@@ -1378,5 +1427,60 @@
     }
     .exit-layer {
         width: 310px;
+    }
+}
+
+@media (max-width: 350px) {
+    .check {
+        .block-1, .block-2 {
+            display: none;
+        }
+        &-subtitle {
+            display: none;
+        }
+        &-wrap {
+            grid-template-rows: 22vw 0 0.5em auto 2em auto 2em auto 4em;
+        }
+    }
+    .choice-wrap {
+        grid-template-columns: 2vw 1fr 2vw;
+        .subgrid-layer {
+            display: none;
+        }
+        .btn-choice {
+            display: none;
+        }
+    }
+    .decision-slider .slide img {
+        height: 150px;
+    }
+    .decision {
+        .slick-arrow {
+            top: 80px;
+        }
+        &-title {
+            margin-bottom: 0.5em;
+        }
+    }
+    .bank {
+        .footer {
+            bottom: 34%;
+            &-wrapper {
+                padding: 1em 2em;
+            }
+            &-list img {
+                width: 110px;
+                transform: translateX(-22px);
+            }
+        }
+        &-title {
+            display: none;
+        }
+        .layer {
+            margin-top: 0;
+        }
+        .btn-bank {
+            margin-top: 0.5em;
+        }
     }
 }
