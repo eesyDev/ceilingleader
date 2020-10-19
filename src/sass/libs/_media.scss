@@ -1,4 +1,7 @@
 @media (min-width: 1430px) {
+    h2 {
+        font-size: 3.7em;
+    }
     .promo {
         &-overlay {
             grid-template-rows: 19vw 14em 2em 5em 4em 4em;
@@ -13,25 +16,36 @@
         }
     }
     .calc {
-        grid-template-rows: 13.5em auto .5em auto 2em auto .5em auto 12em;
+        grid-template-rows: 11.5em auto 1em auto 2em auto .5em auto 12em;
     }
     .value {
-        grid-template-rows: 16em 4em 3em auto 4em;
+        grid-template-rows: 12em 4em 3em auto 4em;
     }
     .check-wrap {
-        grid-template-rows: 16em auto 1.5em auto 1em auto 1em auto 4em;
+        grid-template-rows: 12em auto 1.5em auto 1em auto 1em auto 4em;
     }
     .choice-wrap {
-        grid-template-rows: 15em auto 1.5em auto 3em auto 2em auto 4em;
+        grid-template-rows: 13em auto 1.5em auto 3em auto 2em auto 4em;
     }
     .decision-wrap {
-        padding-top: 14em;
+        padding-top: 12em;
         .arrow {
-            top: 35em;
+            top: 24em;
         }
     }
-    .bank-wrap {
-        padding: 17em 17em 0 15.5em;
+    .bank {
+        &-wrap {
+            padding: 3em 17em 0 15.5em;
+        }
+        &-form {
+            margin-bottom: 2em;
+        }
+        &-woman {
+            bottom: 31%;
+        }
+        .aside {
+            top: 35%;
+        }
     }
 }
 
@@ -41,7 +55,7 @@
         letter-spacing: 0;
     }
     p {
-        font-size: 1.3em;
+        font-size: 16.7px;
     }
     .social-icons {
         right: 9.2em;
@@ -59,10 +73,11 @@
     }
     .promo {
         &-overlay {
-            grid-template-columns: 19vw 1fr 34vw;
-            grid-template-rows: 19vw 23em 2em auto 7em auto;
+            grid-template-columns: 14vw 1fr 34vw;
+            grid-template-rows: 9vw 23em 2em auto 7em auto;
             .title {
-                font-size: 5.6em;
+                font-size: 5.2em;
+                line-height: 1;
             }
         }
         &-wom {
@@ -71,15 +86,16 @@
         &-slider {
             .slick-prev {
                 left: 82.8%;
+                top: 15%;
                 img {
-                    width: 375px;
+                    width: 340px;
                 }
             }
             .slick-next {
                 right: 16.2%;
-                top: 45%;
+                top: 47%;
                 img {
-                    width: 375px;
+                    width: 340px;
                 }
             }
             .slide {
@@ -88,7 +104,7 @@
     }
     .calc {
         grid-template-columns: 18vw .6fr .3fr 9vw;
-        grid-template-rows: 8.5em auto 0.5em auto 2em auto 1em auto 4em;
+        grid-template-rows: 6.5em auto .5em auto 1em auto 1em auto 4em;
         &-sm-grid {
             width: 100%;
         }
@@ -106,10 +122,10 @@
     }
     .value {
         grid-template-columns: 11em 0.75fr 1.5fr 22em;
-        grid-template-rows: 11em 7em 3em auto 4em;
+        grid-template-rows: 8em 6em 3em auto 4em;
         &-blocks {
             grid-template-columns: 1fr 2em 1fr 2em 1fr;
-            grid-template-rows: 8.9em 2em 5.9em 2em 5.9em 2em 5.9em 1em 5.9em;
+            grid-template-rows: 7.9em 1em 5.9em 1em 5.9em 1em 5.9em 1em 5.9em;
         }
         &-block {
             padding: 1em 1.2em;
@@ -125,14 +141,16 @@
             
         }
         .iphone {
-            top: 3%;
+            top: -3%;
+            left: -7%;
+            width: 150%;
         }
     }
     .check {
         grid-template-columns: 19vw 1fr .75fr 17.5vw;
         &-wrap {
             grid-template-columns: 19vw 1fr 1fr 16vw;
-            grid-template-rows: 11em auto 3em auto 2.5em auto 2em auto 4em;
+            grid-template-rows: 8em auto 2em auto 2.5em auto 2em auto 4em;
         }
         &-slider {
             .slick-prev {
@@ -157,7 +175,7 @@
             font-size: 2.5em;
         }
         &-wrap {
-            grid-template-rows: 12em auto 3em auto 3em auto 2em auto 4em;
+            grid-template-rows: 10em auto 2em auto 2em auto 2em auto 4em;
         }
         &-grid {
             .choice-item {
@@ -180,12 +198,15 @@
             }
             .arrow {
                 right: 8em;
-                top: 29em;
+                top: 16em;
                 width: 204px;
+            }
+            .slick-arrow {
+                top: 210px;
             }
         }
         .slide-counter {
-            bottom: 225px;
+            bottom: 150px;
         }
         &-slider {
             width: 47.5%;
@@ -193,21 +214,30 @@
     }
     .bank {
         &-wrap {
-            padding: 10em 10em 0 23.5em;
+            padding: 4em 10em 0 23.5em;
         }
         &-subtitle {
             padding-left: 31%;
             font-size: 2.5em;
-        }
+}
         &-form {
-            margin-top: 18em;
+            margin-top: 0;
+            margin-left: 27em;
+            margin-bottom: 2em;
             p {
                 width: 67%;
             }
         }
+        &-woman {
+            width: 20%;
+            bottom: 31%;
+        }
     }
     .footer {
         padding: 3em 24em 3em 22em;
+        hr {
+            margin: 2em 0 1em;
+        }
         &-wrapper {
             .footer-list:nth-child(1) {
                 margin-right: 12em;
@@ -224,6 +254,44 @@
 }
 
 
+@media (max-width: 1380px) {
+    .bank-woman {
+        display: none;
+    }
+    .modal-no-location .location-layer {
+        width: 75%;
+    }
+    .bank {
+        &-wrap {
+            padding: 4em 8em 0 10em;
+        }
+        &-form {
+            margin-left: 0;
+            margin-top: 2em;
+            margin-bottom: 2em;
+            width: 100%;
+            flex-wrap: wrap;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        &-tilewrap {
+            align-items: center;
+        }
+        &-subtitle {
+            padding-left: 0;
+        }
+        .btn-bank {
+            margin-left: 4em;
+        }
+        .footer {
+            padding: 1em 15em;
+            hr {
+                margin: 1em 0;
+            }
+        }
+    }
+}
+
 @media (max-width: 1199px) {
     body {
         overflow-x: hidden;
@@ -239,10 +307,9 @@
         right: 1.9em;
     }
     .promo {
-        min-height: 690px;
         &-overlay {
             grid-template-columns: 9vw 1fr 44vw;
-            grid-template-rows: 25vw 11em 2em 12vw 1em auto;
+            grid-template-rows: 14vw 11em 2em 12vw 1em auto;
         }
         &-slider {
             .slick-next, .slick-prev {
@@ -252,11 +319,11 @@
             }
             .slick-prev {
                 left: 84.2%;
-                top: 12%;
+                top: 18%;
             }
             .slick-next {
                 right: 14%;
-                top: 36%;
+                top: 52%;
             }
         }
     }
@@ -271,16 +338,20 @@
         }
     }
     .value {
-        min-height: 940px;
-        grid-template-columns: 2em 1fr 1.5fr 3em;
-        &-blocks {
-            grid-template-rows: 9vw 1em 9vw 1em 9vw 1em 9vw 1em 9vw;
-            margin-left: 0;
-        }
+        grid-template-columns: 3em 1fr 3em;
+        grid-template-areas:
+                            ". . . "
+                            ". Value-Title ."
+                            ". . . "
+                            ". Value-Grid ."
+                            ". .  Value-Icons";
         .iphone {
-            width: 550px;
+            display: none;
         }
-        
+        &-blocks {
+            grid-template-rows: 7vw .5em 7vw .5em 7vw .5em 7vw 0em 9vw;
+            margin-left: 4em;
+        }
     }
     .check {
         &-wrap {
@@ -301,7 +372,7 @@
     }
     .choice {
         &-wrap {
-            grid-template-columns: 5vw 1fr 5vw;
+            grid-template-columns: 10vw 1fr 8vw;
         }
         &-grid {
             grid-template-columns: 1fr 1em 1fr 1em 1fr 1em 1fr;
@@ -313,13 +384,12 @@
         }
     }
     .decision {
-        min-height: 770px;
         &-wrap {
             padding-left: 5.5em;
             .arrow {
                 width: 140px;
-                right: 1em;
-                top: 21em;
+                right: 2em;
+                top: 10em;
             }
         }
         .slide-counter {
@@ -338,21 +408,23 @@
     }
     .bank {
         &-wrap {
-            padding: 9em 5em 0 7.5em;
-        }
-        &-form {
-            margin-top: 8em;
+            padding: 3em 8em 0 10em;
         }
         &-woman {
             margin-right: 0;
         }
         .layer {
-            width: 480px;
+            width: 450px;
+        }
+        .footer {
+            padding: 1em 5em;
+        }
+        .btn-bank {
+            margin-left: 2em;
+            width: 205px;
         }
     }
-    .footer {
-        padding: 3em 6em;
-    }
+    
     .popup {
         background-color: rgba(0,0,0, .9);
         img {
@@ -365,6 +437,9 @@
 }
 
 @media (max-width: 991px) {
+    .aside {
+        display: none;
+    }
     nav ul li {
         display: flex;
         justify-content: center;
@@ -380,9 +455,13 @@
         &-slider {
             min-height: 100vh;
         }
+        &-wom {
+            display: none;
+        }
     }
     .promo-overlay {
-        grid-template-columns: 5vw 1fr 44vw;
+        grid-template-columns: 14vw 1fr 44vw;
+        grid-template-rows: 29vw 11em 2em 12vw 1em auto;
         min-height: 100vh;
     }
     .promo-overlay .title {
@@ -392,26 +471,33 @@
         width: 70%;
     }
     .promo-slider .slick-prev {
-        left: 80%;
+        left: 76.7%;
     }
     .promo-slider .slick-next {
-        right: 17%;
+        right: 21%;
     }
     .calc {
         grid-template-columns: 6vw 0.8fr 0.3fr 6vw;
+        grid-template-rows: 22.5vw auto .5em auto 2em auto .5em auto 4em;
+        &-sm-grid {
+            grid-template-rows: 10em;
+        }
     }
     .calc .tape {
         width: 124%;
     }
     .value {
-        min-height: 905px;
-        height: 905px;
+        grid-template-rows: 25vw 2em 3em auto 4em;
     }
     .value .iphone {
         transform: translateX(-170px);
     }
     .value-blocks {
         grid-template-rows: 12vw 1em 9vw 1em 9vw 1em 9vw 1em 9vw;
+        margin-left: 0;
+    }
+    .phone {
+        padding: 0.5em .5em 1em 0.5em;
     }
     .value {
         grid-template-columns: 3em 1fr 3em;
@@ -424,30 +510,16 @@
         .iphone {
             display: none;
         }
-    }
-    .phone {
-        padding: 0.5em .5em 1em 0.5em;
-    }
-    .value {
-            grid-template-columns: 3em 1fr 3em;
-            grid-template-areas:
-                                ". . . "
-                                ". Value-Title ."
-                                ". . . "
-                                ". Value-Grid ."
-                                ". .  Value-Icons";
-            .iphone {
-                display: none;
-            }
-            &-blocks {
-                grid-template-rows: 11vw 1em 9vw 1em 9vw 1em 9vw 1em 9vw;
-            }
+        &-blocks {
+            grid-template-rows: 11vw 1em 9vw 1em 9vw 1em 9vw 1em 9vw;
         }
-        .phone-input {
-            padding: 0.5em .5em 1em 2.5em;
-        }
+    }
+    .phone-input {
+        padding: 0.5em .5em 1em 2.5em;
+    }
     .check-wrap {
         grid-template-columns: 5vw 1fr 1fr 5vw;
+        grid-template-rows: 23vw auto 1.5em auto 2em auto 2em auto 4em;
     }
     .check .block-1, .check .block-2 {
         width: 95%;
@@ -455,6 +527,10 @@
     .choice {
         &-grid {
             grid-template-columns: 21vw 1em 21vw 1em 21vw 1em 21vw;
+        }
+        &-wrap {
+            grid-template-columns: 6vw 1fr 6vw;
+            grid-template-rows: 18vw auto 1.5em auto 2em auto 2em auto 4em;
         }
         &-subgrid {
             .subgrid-layer {
@@ -480,18 +556,19 @@
         }
     }
     .decision {
-        min-height: 680px;
         &-wrap {
-            padding-top: 7em;
+            padding-top: 26vw;
             padding-left: 3em;
             .arrow {
                 width: 100px;
                 right: 1em;
                 top: 19em;
+                display: none;
             }
             .woman {
                 right: 13%;
                 width: 290px;
+                display: none;
             }
             .type {
                 margin-bottom: -1.9em;
@@ -499,21 +576,26 @@
         }
         &-slider {
             margin-top: 2em;
-            width: 55%;
+            width: 95%;
         }
         .slick-dots {
-            top: -20px;
-            width: 64%;
+            top: -22px;
+            width: 78%;
             li {
-                font-size: 0.4em;
+                font-size: 0.7em;
                 margin: 0;
             }
         }
     }
     .bank {
-        min-height: 900px;
         &-wrap {
-            padding: 7em 3em 0 4em;
+            padding: 11vw 3em 0 4em;
+        }
+        &-tilewrap {
+            align-items: center;
+        }
+        &-subtitle {
+            padding-left: 0;
         }
         &-title {
             text-align: center;
@@ -522,21 +604,27 @@
             padding-left: 50%;
         }
         &-woman {
-            height: 600px;
-            margin-top: 5.7em;
-            width: 64%;
-            margin-right: 0;
+            // height: 600px;
+            // margin-top: 5.7em;
+            // width: 64%;
+            // margin-right: 0;
+            display: none;
         }
         &-form {
             margin-top: 4em;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+            flex-direction: row;
+            margin-left: 0;
+            margin-bottom: 2em;
             .personal-data-bank {
-                width: 100%;
+                width: 50%;
             }
         }
         .layer {
-            flex-direction: column;
             padding: 1em 1em 1em 15px;
-            width: 217px;
+            width: 400px;
             height: fit-content;
             img {
                 width: 160px;
@@ -547,10 +635,11 @@
         .btn-bank {
             width: 219px;
         }
+        .footer {
+            padding: 5em 3em;
+        }
     }
-    .footer {
-        padding: 3em 2em;
-    }
+    
     .exit-layer {
         width: 70%;
         height: 85%;
@@ -571,12 +660,13 @@
     }
     .aside {
         left: -135px;
+        top: 26%;
     }
 }
 
 @media (max-width: 767px) {
     h2 {
-        font-size: 2.6em;
+        font-size: 2em;
     }
     .social-icons {
         z-index: 1;
@@ -656,8 +746,11 @@
             }
         }
     }
+    .promo-wom {
+        display: none;
+    }
     .promo-slider .slick-next{
-        right: 24%;
+        right: 25%;
     }
     .promo-slider .slick-prev{
         left: 72%;
@@ -672,11 +765,10 @@
         grid-template-columns: 1fr 1em 1fr 1em 1fr 1em 1fr;
     }
     .value {
-        height: 1140px;
-        grid-template-rows: 5em 7em 3em auto 4em;
+        grid-template-rows: 16vw 2em 3em auto 4em;
     }
     .value-blocks {
-        grid-template-rows: 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr;
+        grid-template-rows: 6em 1em 5em 1em 4.2em 1em 4.2em 1em 4.2em 1em 4.2em 1em 4.2em;
         grid-template-columns: 1fr 1em 1fr;
         grid-template-areas: 
         " Ceiling Ceiling Ceiling"
@@ -692,9 +784,11 @@
         " Profile-V . Insert"
         ". . ."
         " Button-Value . Personal-Data ";
+        .btn-value {
+            height: 65px;
+        }
     }
     .check-wrap {
-        grid-template-rows: 5em auto 2em auto 2em auto 2em auto 6em;
         grid-template-columns: 3vw 1fr 1fr 3vw;
     }
     .img-grid p {
@@ -703,17 +797,41 @@
     .choice {
         &-grid {
             grid-template-columns: 1fr 2em 1fr;
-            grid-template-rows: 38vw 2em 38vw;
+            grid-template-rows: 37vw 2em 27vw;
             grid-template-areas: "Item-1 . Item-2"
                                  "Item-3 . Item-4";
         }
         &-item {
             height: 210px;
         }
+        &-wrap {
+            grid-template-rows: 10vw auto 1.5em auto 2em auto 2em auto 4em;
+        }
+        &-subgrid {
+            .subgrid-layer {
+                height: 150px;
+                img {
+                    width: 140px;
+                    height: 84px;
+                }
+                .sub-form {
+                    margin-top: -15px;
+                    .grey {
+                        margin: 0 0 4px;
+                    }
+                    .phone-input {
+                        height: 45px;
+                    }
+                }
+            }
+        }
     }
     .decision {
         &-slider {
-            width: 75%;
+            width: 95%;
+        }
+        &-title {
+            margin-bottom: 1.5em;
         }
     }
     .decision .slick-arrow {
@@ -722,19 +840,23 @@
     .bank {
         min-height: 810px;
         &-wrap {
-            padding: 4em 3em 0 4em;
+            padding: 2em 3em 0 4em;
         }
         &-subtitle {
             text-align: center;
             padding-left: 0;
+            font-size: 1.2em;
         }
         .layer {
-            width: 200px;
+            width: 330px;
             img {
-                transform: translate(35px,-30px);
+                transform: translate(0,-10px);
                 width: 100px;
                 height: 74px;
             }
+        }
+        &-form {
+            margin-top: 2.5em;
         }
         .layer-form {
             form input {
@@ -745,9 +867,8 @@
             width: 200px;
             height: 55px;
         }
-        &-woman {
-            height: 430px;
-            margin-top: 10em;
+        &-icons {
+            bottom: 28em;
         }
     }
     .grey {
@@ -799,9 +920,19 @@
             margin-top: 0.5em;
         }
     }
+    .location-upper .btn {
+        width: 100%;
+    }
     .modal-no-location .location-layer {
         padding: 25px;
-        width: 75%;
+        width: 90%;
+        height: 30%;
+    }
+    .modal-no-location .location-upper form {
+        flex-direction: column;
+    }
+    .modal-no-location .location-upper form input {
+        height: 75px;
     }
 }
 
@@ -809,42 +940,47 @@
     h2 {
         font-size: 2.1em;
     }
+    .burger {
+        right: 12%;
+        top: 5%;
+    }
     .personal-data {
         font-size: 0.65em;
     }
     .header-wrap {
-        width: 50%;
+        width: 65%;
+        font-size: 1.4em;
     }
     .promo {
         min-height: 580px;
+        &-overlay {
+            grid-template-rows: 20vw 17em 2em 17vw 1em auto;
+        }
         &-wom {
             display: none;
+        }
+        .title {
+            font-size: 2.1em;
+            display: flex;
+            align-items: center;
         }
         .btn-promo {
             width: 90%;
         }
     }
-    .promo-overlay {
-        grid-template-rows: 12vw 17em 2em 17vw 1em auto;
-    }
-    .promo-overlay .title {
-        font-size: 2.1em;
-        display: flex;
-        align-items: center;
-    }
     .promo-slider .slick-prev {
-        left: 71%;
-        top: 14%;
+        left: 71.5%;
+        top: 27%;
     }
     .promo-slider .slick-next {
         right: 24.5%;
-        top: 38%;
+        top: 46%;
     }
     .promo-slider .slick-next img, .promo-slider .slick-prev img {
         width: 130px;
     }
     .calc {
-        grid-template-rows: 3em auto 0em auto 1em auto 0em auto 5em;
+        grid-template-rows: 12.5vw auto .5em auto 1em auto .5em auto 6em;
         grid-template-columns: 3vw .8fr .3fr 3vw;
         overflow: hidden;
     }
@@ -869,7 +1005,10 @@
         transform: translateY(115px);
     }
     .calc-sm-grid {
-        height: 130px;
+        height: auto;
+        .block {
+            width: 100%;
+        }
     }
     .calc-sm-grid .block p {
         width: 100%;
@@ -883,14 +1022,14 @@
         width: 100%;
     }
     .value {
-        grid-template-rows: 5em 5em 3em auto 4em;
-        min-height: 980px;
+        grid-template-rows: 11vw 4em 3em auto 4em;
         &-block {
             a {
                 font-size: 13px;
             }
         }
         &-blocks {
+            grid-template-rows: 5em .5em 5em .5em 3.5em .5em 4.2em .5em 4.2em .5em 4.2em .5em 4.2em;
             .personal-data-value {
                 width: 100%;
             }
@@ -905,47 +1044,81 @@
     .choice {
         &-grid {
             grid-template-columns: 1fr;
-            grid-template-rows: auto 2em auto 2em auto 2em auto;
-            grid-template-areas: "Item-1"
-                                 "."
-                                 "Item-2"
-                                 "."
-                                 "Item-3"
-                                 "."
-                                 "Item-4";
+            grid-template-rows: auto 1em auto 1em auto 1em auto;
+            grid-template-areas: 
+                "Item-1"
+                "."
+                "Item-2"
+                "."
+                "Item-3"
+                "."
+                "Item-4";
+            .choice-item {
+                height: auto;
+                flex-direction: row;
+                padding: 0.5em;
+                .subtitle {
+                    display: none;
+                }
+                img {
+                    margin: 0.7em 1em 0.7em 0;
+                }
+            }
         }
         &-subgrid {
-            flex-direction: column;
             align-items: center;
             justify-content: space-between;
+            align-items: center;
             .subgrid-layer {
                 margin-right: 0;
+                height: 65px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 0.5em;
+                .sub-form {
+                    margin-top: 0;
+                    .grey {
+                        display: none;
+                    }
+                    .phone-input {
+                        width: auto;
+                    }
+                }
+                img {
+                    display: none;
+                }
             }
             .subgrid-right {
                 margin-top: 2em;
                 margin-bottom: 14px;
+                width: 40%;
+                margin: 0;
                 .personal-data-choice {
-                    width: 75%;
+                    display: none;
+                }
+                .btn-choice {
+                    width: 100%;
+                    margin-bottom: 0;
                 }
             }
         }
+        &-wrap {
+            grid-template-rows: 8vw auto 1.5em auto 2em auto 2em auto 4em;
+        }
     }
     .decision {
-        min-height: 580px;
         &-title {
             text-align: center;
         }
         &-wrap {
-            padding: 1.5em;
+            padding: 20.5vw 5vw 0;
             .woman {
                 display: none;
             }
             .arrow {
                 display: none;
             }
-        }
-        .slide-counter {
-            bottom: 130px;
         }
         &-slider {
             width: 100%;
@@ -960,46 +1133,65 @@
             }
         }
     }
-    .decision .slick-arrow {
-        top: 90px;
-    }
     .bank {
         &-woman {
             display: none;
         }
         &-form {
             align-items: center;
+            margin-top: 0;
+            p {
+                display: none;
+            }
+        }
+        &-subtitle {
+            display: none;
+        }
+        .layer {
+            width: 100%;
+            img {
+                transform: translate(0, 15px);
+            }
+        }
+        .btn-bank {
+            width: 100%;
+            margin-left: 0;
+        }
+        .footer {
+            padding: 0;
+            &-wrapper {
+                justify-content: space-between;
+                padding: 2em;
+            }
+            &-list {
+                margin-top: 2em;
+                img {
+                    transform: translateX(-15px);
+                }
+            }
+            &-wrapper > div {
+                &:nth-child(1) {
+                    order: 1;
+                    width: 50%;
+    
+                }
+                &:nth-child(2) {
+                    order: 3;
+                    width: 50%;
+                }
+                &:nth-child(3) {
+                    order: 2;
+                    width: 50%;
+                    margin-bottom: 0;
+                }
+                &:nth-child(4) {
+                    order: 4;
+                    width: 50%;
+                }
+            }
         }
     }
-    .footer {
-        &-wrapper {
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        &-list {
-            margin-top: 2em;
-        }
-        &-wrapper > div {
-            &:nth-child(1) {
-                order: 1;
-                width: 50%;
-
-            }
-            &:nth-child(2) {
-                order: 3;
-                width: 50%;
-            }
-            &:nth-child(3) {
-                order: 2;
-                width: 50%;
-                margin-bottom: 0;
-            }
-            &:nth-child(4) {
-                order: 4;
-                width: 50%;
-            }
-        }
-    }
+    
     .exit-layer {
         width: 310px;
         img {
@@ -1024,14 +1216,39 @@
     .promo-slider .slick-next {
         right: 27.5%;
     }
+    .calc {
+        &-sm-grid {
+            grid-template-rows: 8em;
+        }
+    }
     .value {
-        height: 1150px;
+        grid-template-columns: 2em 1fr 2em;
+        grid-template-rows: 7vw 3em 3em auto 4em;
+        &-blocks {
+            grid-template-rows: 5em .5em 5em .5em 5em .5em 5em .5em 5em .5em 5em .5em 4.2em;
+        }
+        .social-icons {
+            display: none;
+        }
     }
     .value-block {
-        height: 95px;
+        height: 75px;
     }
-    .decision .slick-dots li {
-        margin: 0 5px;
+    .choice {
+        .social-icons {
+            display: none;
+        }
+    }
+    .decision {
+        .slick-dots li {
+            margin: 0 5px;
+        }
+        .slide-counter {
+            bottom: 175px;
+        }
+    }
+    .bank .footer-list img {
+        transform: translateX(-30px);
     }
 }
 
@@ -1050,40 +1267,44 @@
     .promo-overlay {
         grid-template-rows: 12vw 17em 2em 27vw 1em auto;
     }
-    .value {
-        height: 1330px;
+    .calc {
+        grid-template-columns: 1vw .8fr .3fr 1vw;
     }
-    .value-blocks {
-        height: 1040px;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1em 1fr;
-        grid-template-areas: 
-            " Ceiling Ceiling Ceiling"
-            
-            " Phone Phone Phone "
-            
-            " Spots Spots Spots "
-            
-            " Angles Angles Angles "
-            
-            " Trumpet Trumpet Trumpet"
-            
-            " Chandelier Chandelier Chandelier "
-            
-            " Bra Bra Bra "
-            
-            " Cornise Cornise Cornise "
-            
-            " Facture Facture Facture "
-            
-            " Profile-V Profile-V Profile-V "
-            
-            " Insert Insert Insert "
-            
-            " Button-Value . Personal-Data ";
+    .value {
+        grid-template-columns: .5em 1fr .5em;
     }
     .value-block {
         height: 75px;
+    }
+    .choice {
+        &-subtitle {
+            display: none;
+        }
+        &-wrap {
+            grid-template-rows: 8vw auto 1.5em auto 1em auto 0em auto 4em;
+        }
+        &-subgrid {
+            .subgrid-right {
+                width: 32%;
+            }
+            .subgrid-layer {
+                width: 65%;
+            }
+        }
+    }
+    .bank {
+        .layer {
+            form .grey {
+                display: none;
+            }
+            img {
+                width: 82px;
+                height: 68px;
+            }
+            input {
+                width: 100%;
+            }
+        }
     }
     .exit-layer {
         width: 310px;

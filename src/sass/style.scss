@@ -38,19 +38,6 @@ input[type='range']::-webkit-slider-thumb {
     box-shadow: -609px 0 0 609px $yellow;
 }
 
-input[type="range"]::-moz-range-progress {
-    background-color: $yellow; 
-}
-input[type="range"]::-moz-range-track {  
-    background-color: #dbdbdb;
-}
-input[type="range"]::-ms-fill-lower {
-    background-color: $yellow; 
-}
-input[type="range"]::-ms-fill-upper {  
-    background-color: #dbdbdb;
-}
-
 .phone-input {
     border: 2px solid #bdbdbd;
     border-radius: 17px;
@@ -143,28 +130,44 @@ button {
         width: 100%;
         height: 100%;
     }
-    .location-layer {
-        background-color: #fff;
-        padding: 100px;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        align-items: center;
-        text-align: center;
-        border-radius: 17px;
-        box-shadow: 0 4px 10px 2px rgba(0,0,0,0.5);
-        width: 50%;
-        height: 50%;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        position: absolute;
-        p {
-            font-size: 1.5em;
+    .location {
+        &-layer {
+            background-color: #fff;
+            padding: 100px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            border-radius: 17px;
+            box-shadow: 0 4px 10px 2px rgba(0,0,0,0.5);
+            width: 50%;
+            height: 50%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            p {
+                font-size: 1.5em;
+            }
         }
-        input {
-            border: none;
-            font-size: 20px;
+        &-upper {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            form {
+                width: 70%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                input {
+                    border: none;
+                    font-size: 20px;
+                    width: 40%;
+                }
+            }
+            p {
+                width: 20%;
+            }
         }
     }
 }
@@ -438,7 +441,7 @@ input {
         left: 0;
         display: grid;
         grid-template-columns: 17vw 1fr 46vw;
-        grid-template-rows: 14vw 14em 2em 5em 4em 4em;
+        grid-template-rows: 14vw 14em 2em 5em 2em 4em;
         grid-template-areas: ". . ."
                              ". Title . "
                              ". . ."
@@ -575,6 +578,7 @@ input {
         .price {
             grid-area: Price;
             font-size: 0.9em;
+            white-space: nowrap;
         }
         .square {
             grid-area: Square;
@@ -710,7 +714,7 @@ input[type=range]::-webkit-slider-thumb {
         z-index: 5;
         display: grid;
         grid-template-columns: 1fr 1em 1fr 1em 1fr;
-        grid-template-rows: 6em 1em 4.5em 1em 4.5em 1em 4.5em 1em 4.5em;
+        grid-template-rows: 6em 0.5em 4.5em .5em 4.5em .5em 4.5em .5em 4.5em;
         grid-template-areas: " Ceiling Ceiling Ceiling . Phone"
                              ". . . . ."
                              " Spots . Angles . Trumpet"
@@ -776,6 +780,8 @@ input[type=range]::-webkit-slider-thumb {
         position: relative;
         .grey {
             margin-bottom: 0.7em;
+            color: #bdbdbd;
+            white-space: nowrap;
         }
         i {
             font-weight: 600;
@@ -792,6 +798,7 @@ input[type=range]::-webkit-slider-thumb {
             top: 80%;
             width: 100%;
             padding: 1em;
+            z-index: 3;
         }
         .drop-menu {
             li {
@@ -806,9 +813,6 @@ input[type=range]::-webkit-slider-thumb {
             border: none;
             background-color: transparent;
             outline: none;
-        }
-        .grey {
-            color: #bdbdbd;
         }
     }
     
@@ -849,6 +853,7 @@ input[type=range]::-webkit-slider-thumb {
         align-items: center;
         img {
             margin-right: 0.5em;
+            height: 100px;
         }
     }
    &-slider {
@@ -857,7 +862,7 @@ input[type=range]::-webkit-slider-thumb {
         width: 100%;
         .img-grid {
             width: 100%;
-            margin-top: 4em;
+            margin-top: 3em;
             img {
                 width: 72%;
                 z-index: 9;
@@ -873,7 +878,7 @@ input[type=range]::-webkit-slider-thumb {
         }
         .counter {
             position: absolute;
-            top: 6%;
+            top: 0;
             z-index: 999;
             .count-beg {
                 font-size: 1.3em;
@@ -979,12 +984,13 @@ input[type=range]::-webkit-slider-thumb {
             align-items: center;
             justify-content: space-between;
             img {
-                margin: 1em 0;
+                margin: .7em 0;
             }
             p {
-                letter-spacing: 0.05em;
-                line-height: 20px;
+                letter-spacing: 0.02em;
+                line-height: 19px;
                 height: 100%;
+                font-size: 0.8em;
             }
         }
     }
@@ -1063,12 +1069,12 @@ input[type=range]::-webkit-slider-thumb {
             position: absolute;
             right: 10%;
             bottom: 0;
-            width: 360px;
+            width: 310px;
         }
         .arrow {
             position: absolute;
             right: 2em;
-            top: 13em;
+            top: 11em;
             width: 140px;
         }
     }
@@ -1086,6 +1092,7 @@ input[type=range]::-webkit-slider-thumb {
             img {
                 border-radius: 17px;
                 width: 100%;
+                height: 260px;
             }
             h5 {
                 padding: 1em 0 0 1em;
@@ -1166,11 +1173,14 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .bank {
+    .aside {
+        top: 35%;
+    }
     background-color: #212121;
     position: relative;
     height: 100vh;
     &-wrap {
-        padding: 8em 17em 0 15.5em;
+        padding: 6em 17em 0 13.5em;
     }
     .wrapper {
         display: flex;
@@ -1179,7 +1189,7 @@ input[type=range]::-webkit-slider-thumb {
     &-tilewrap {
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        align-items: flex-end;
     }
     &-title {
         grid-area: B-Title;
@@ -1247,6 +1257,9 @@ input[type=range]::-webkit-slider-thumb {
     }
 }
 .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
     background-color: $yellow;
     padding: 3em 15em;
     display: flex;
@@ -1358,6 +1371,10 @@ input[type=range]::-webkit-slider-thumb {
     .active-number {
         color: #212121;
     }
+}
+
+.slick-prev:before, .slick-next:before {
+    content: none;
 }
 
  @import "libs/media"

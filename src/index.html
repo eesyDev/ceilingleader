@@ -777,34 +777,6 @@
             </div>
         </section>
         <section class="swiper-slide bank" id="credit">
-            <div class="header">
-                <div class="header-wrap">
-                    <img src="icons/logo.png" alt="logo" class="logo">
-                    <nav>
-                        <ul class="nav-list">
-                            <li><a href="#main">Главная</a></li>
-                            <li><a href="#calculator">Цены</a></li>
-                            <li><a href="#decision">О нас</a></li>
-                            <li><a href="#choice-sec">Почему мы</a></li>
-                            <li><a href="#check-list">Работы</a></li>
-                        </ul>
-                    </nav>
-                    <ul class="nav-list-2">
-                        <li class="cities drop-item">
-                            <a href="#" class="location-city">Тюмень</a>
-                            <ul class="dropdown">
-                                <li>Тюмень</li>
-                                <li>Нягань</li>
-                                <li>Ханты-Мансийск</li>
-                            </ul>
-                        </li>
-                        <li class="phones">
-                            <a href="#" class="phone-1">8 922 002 46 16</a>
-                            <a href="#" class="phone-2">8 3452 60 15 60</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
             <div class="bank-wrap"> 
                 <div class="bank-tilewrap">
                     <h2 class="bank-title">Потолок в рассрочку</h2>
@@ -831,59 +803,53 @@
                         </p>
                     </div>
                 </div>
-                <div class="bank-icons social-icons">
-                    <img src="icons/vk_white.png" alt="vk">
-                    <img src="icons/wa_white.png" alt="wa">
-                    <img src="icons/phone_white.png" alt="p">
-                </div>
             </div>
             <div class="aside aside-light">
                 07 <div class="aside-line"><span class="seventh"></span></div> <div class="active-number">07</div>
             </div>
+            <footer class="footer">
+                <div class="footer-inner">
+                    <div class="footer-wrapper">
+                        <div class="footer-list">
+                            <img src="icons/logo_dark.png" alt="">
+                        </div>
+                        <div class="footer-list">
+                            <ul>
+                                разделы
+                                <li><a href="#main">Главная</a></li>
+                                <li><a href="#decision">О нас</a></li>
+                                <li><a href="#check-list">Наши работы</a></li>
+                                <li><a href="#credit">Рассрочка</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-list">
+                            <ul>
+                                расчет стоимости
+                                <li><a href="#">Быстрый расчет</a></li>
+                                <li><a href="#">Точный расчет</a></li>
+                                <li><a href="#">Чек-лист стоимости</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-list">
+                            <ul>
+                                мы в соц. сетях
+                                <li><a href="#">Вконтакте</a></li>
+                                <li><a href="#">Однокласники</a></li>
+                                <li><a href="#">WhatsApp</a></li>
+                                <li><a href="#">Viber</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="footer-copyright">
+                        <a href="#">Разработано в студии Nordcolor.</a>
+                        <a href="#">Политика конфиденциальности</a>
+                        <a href="#">Copyright © 2020. "ЛИДЕР-ПОТОЛКОВ"</a>
+                    </div>
+                </div>
+            </footer>
         </section>
-        <footer class="swiper-slide footer">
-            <div class="footer-inner">
-                <div class="footer-wrapper">
-                    <div class="footer-list">
-                        <img src="icons/logo_dark.png" alt="">
-                    </div>
-                    <div class="footer-list">
-                        <ul>
-                            разделы
-                            <li><a href="#main">Главная</a></li>
-                            <li><a href="#decision">О нас</a></li>
-                            <li><a href="#check-list">Наши работы</a></li>
-                            <li><a href="#credit">Рассрочка</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-list">
-                        <ul>
-                            расчет стоимости
-                            <li><a href="#">Быстрый расчет</a></li>
-                            <li><a href="#">Точный расчет</a></li>
-                            <li><a href="#">Чек-лист стоимости</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-list">
-                        <ul>
-                            мы в соц. сетях
-                            <li><a href="#">Вконтакте</a></li>
-                            <li><a href="#">Однокласники</a></li>
-                            <li><a href="#">WhatsApp</a></li>
-                            <li><a href="#">Viber</a></li>
-                        </ul>
-                    </div> 
-                </div>
-                <hr>
-                <div class="footer-copyright">
-                    <a href="#">Разработано в студии Nordcolor.</a>
-                    <a href="#">Политика конфиденциальности</a>
-                    <a href="#">Copyright © 2020. "ЛИДЕР-ПОТОЛКОВ"</a>
-                </div>
-            </div>
-        </footer>
     </div>
-    <div class="swiper-scrollbar"></div>
 </div>   
      <div class="data-overlay" data-modal>
         <div class="close-popup"><i class="fa fa-close"></i></div>
@@ -928,11 +894,13 @@
     <div class="modal-no-location">
         <div class="modal-blur"></div>
         <div class="location-layer">
-            <p>Ваш город </p>
-            <form method="POST">
-                <input type="text" class="city" placeholder="City">
-                <button class="btn location-confirm">Да</button>
-            </form>
+            <div class="location-upper">
+                <p>Ваш город </p>
+                <form method="POST">
+                    <input type="text" class="city" placeholder="City">
+                    <button class="btn location-confirm">Да</button>
+                </form>
+            </div>
             <br>
             <p>Если нет, то введите Ваш город</p>
         </div>

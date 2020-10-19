@@ -73,7 +73,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
     plusBtn[0].addEventListener('click', function plusQ(e) {
         e.preventDefault();
-        quantity[0].innerHTML = ++t;
+        quantity[0].innerHTML = ++t + ' шт';
         if (t < 1) {
             minusBtn[0].classList.add('disable');
         }
@@ -81,7 +81,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
     plusBtn[1].addEventListener('click', function plusQ(e) {
         e.preventDefault();
-        quantity[1].innerHTML = ++s + 'шт';
+        quantity[1].innerHTML = ++s + ' шт';
         if (s < 1) {
             minusBtn[1].classList.add('disable');
         } 
@@ -89,7 +89,7 @@ window.addEventListener('DOMContentLoaded', function() {
     });
     plusBtn[2].addEventListener('click', function plusQ(e) {
         e.preventDefault();
-        quantity[2].innerHTML = ++r + 'шт';
+        quantity[2].innerHTML = ++r + ' шт';
         if (r < 1) {
             minusBtn[2].classList.add('disable');
         } 
@@ -100,7 +100,7 @@ window.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
         if (t > 0) {
             minusBtn[0].classList.remove('disable');
-            quantity[0].innerHTML = --t + 'шт';
+            quantity[0].innerHTML = --t + ' шт';
         }
 
     });
@@ -109,7 +109,7 @@ window.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
         if (s > 0) {
             minusBtn[1].classList.remove('disable');
-            quantity[1].innerHTML = --s + 'шт';
+            quantity[1].innerHTML = --s + ' шт';
         }
 
     });
@@ -117,7 +117,7 @@ window.addEventListener('DOMContentLoaded', function() {
         e.preventDefault(); 
         if (r > 0) {
             minusBtn[2].classList.remove('disable');
-            quantity[2].innerHTML = --r + 'шт';
+            quantity[2].innerHTML = --r + ' шт';
         }
 
     });
