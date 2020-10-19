@@ -9,7 +9,14 @@ window.addEventListener('DOMContentLoaded', function() {
         autoplayTime: 3000,
         prevArrow: '<button type="button" class="slick-prev"><img src="img/button-left.png"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="img/button-right.png"></button>',
-
+        responsive:[
+            {
+                breakpoint: 599,
+                settings: {
+                    arrows: false
+                }
+            }
+        ]
     });
     $('.decision-slider').slick({
         slideToShow: 1,
