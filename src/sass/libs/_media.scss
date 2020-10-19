@@ -57,6 +57,9 @@
     p {
         font-size: 16.7px;
     }
+    input::placeholder {
+        font-size: 1.5em;
+    }
     .social-icons {
         right: 9.2em;
     }
@@ -168,7 +171,12 @@
         .block-2 {
             width: 75%;
         }
-        
+        &-block p {
+            font-size: 22px;
+        }
+        &-slider p {
+            font-size: 20px;
+        }
     }
     .choice {
         &-subtitle {
@@ -181,20 +189,23 @@
             .choice-item {
                 padding: 3em;
                 p {
-                    background-image: 27px;
+                    font-size: 16px;
                 }
             }
+        }
+        .personal-data {
+            font-size: 0.8em;
         }
     }
     .decision {
         &-wrap {
-            padding-left: 22.5em;
-            padding-top: 10em;
+            padding-left: 14.5em;
+            padding-top: 8em;
             margin-bottom: -2em;
             .woman {
-                width: 484px;
+                width: 435px;
                 bottom: 0%;
-                right: 13%;
+                right: 14%;
             }
             .arrow {
                 right: 8em;
@@ -202,14 +213,32 @@
                 width: 204px;
             }
             .slick-arrow {
-                top: 210px;
+                top: 170px;
+            }
+            .slick-dots {
+                width: 80%;
+                margin-left: 11em;
+                li {
+                    font-size: 1.1em;
+                }
             }
         }
         .slide-counter {
-            bottom: 150px;
+            bottom: 195px;
         }
         &-slider {
-            width: 47.5%;
+            width: 51%;
+            .slide {
+                img {
+                    height: 310px;
+                }
+                p {
+                    font-size: 1.2em;
+                }
+            }
+            h5 {
+                font-size: 1.2em;
+            }
         }
     }
     .bank {
@@ -217,7 +246,7 @@
             padding: 4em 10em 0 23.5em;
         }
         &-subtitle {
-            padding-left: 31%;
+            padding-left: 0;
             font-size: 2.5em;
         }
         &-form {
@@ -229,8 +258,14 @@
             }
         }
         &-woman {
-            width: 20%;
+            width: 24%;
             bottom: 31%;
+            left: 15%;
+        }
+        &-tilewrap {
+            margin-left: 31%;
+            margin-bottom: 25px;
+            align-items: flex-start;
         }
     }
     .footer {
@@ -250,6 +285,9 @@
                 }
             }
         }
+    }
+    .data-overlay .processing-personal-data {
+        margin-top: 2em;
     }
 }
 
@@ -289,6 +327,9 @@
                 margin: 1em 0;
             }
         }
+    }
+    .data-overlay .processing-personal-data {
+        margin-top: 32em;
     }
 }
 
@@ -657,6 +698,12 @@
         left: -135px;
         top: 26%;
     }
+    .data-overlay .processing-personal-data {
+        margin-top: 40em;
+        h3 {
+            font-size: 2.7em;
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -929,11 +976,20 @@
     .modal-no-location .location-upper form input {
         height: 75px;
     }
+    .data-overlay .processing-personal-data {
+        width: 75%;
+    }
+    .data-overlay .close-popup {
+        right: .5em;
+    }
 }
 
 @media (max-width: 599px) {
     .header-mobile {
         display: block;
+    }
+    input::placeholder {
+        font-size: 1em;
     }
     input[type='range']::-webkit-slider-runnable-track {
         margin-top: 5px;
@@ -1014,7 +1070,7 @@
     }
     .calc-sm-grid {
         height: auto;
-        grid-template-rows: 7em;
+        grid-template-rows: 8em;
         grid-template-columns: 1fr .5em 1fr .5em 1fr .5em 1fr;
         .block {
             width: 100%;
@@ -1278,6 +1334,9 @@
     .popup img {
         width: 80%;
     }
+    .data-overlay .processing-personal-data p {
+        font-size: 1em;
+    }
 }
 
 @media (max-width: 424px) {
@@ -1361,9 +1420,18 @@
             font-size: 0.9em;
         }
     }
+    .data-overlay .processing-personal-data {
+        margin-top: 68em;
+        h3 {
+            font-size: 2em;
+        }
+    }
 }
 
 @media (max-width: 374px) {
+    section {
+        overflow: hidden;
+    }
     .social-icons {
         display: none;
     }
@@ -1379,10 +1447,10 @@
         font-size: 17px;
     }
     .promo-overlay {
-        grid-template-rows: 21vw 10em 2em 27vw 1em auto;
+        grid-template-rows: 32vw 13em 7em 28vw 1em auto;
     }
     .calc {
-        grid-template-columns: 7vw .8fr 0.3fr 4vw;
+        grid-template-columns: 10vw .8fr 0.3fr 4vw;
         &-layer {
             height: 180px;
             .descr {
@@ -1395,6 +1463,12 @@
         &-sm-grid {
             grid-template-columns: 23% 2.5% 23% 2.5% 23% 2.5% 23%;
             grid-template-rows: 6em;
+            width: 90vw;
+            transform: translateX(-5vw);
+            .block {
+                width: 22vw;
+                border-radius: 8px;
+            }
             p {
                 font-size: 0.5em;
                 overflow: hidden;
@@ -1402,8 +1476,19 @@
             }
         }
     }
+    .check {
+        &-wrap {
+            grid-template-rows: 36vw auto 1.5em auto 2em auto 2em auto 4em;
+        }
+        &-slider {
+            .img-grid p {
+                font-size: 0.5em;
+            }
+        }
+    }
     .value {
         grid-template-columns: 1em 1fr 1em;
+        grid-template-rows: 38vw 1em 3em auto 4em;
         &-blocks {
             grid-template-rows: 4em .5em 4em 0em 0em .5em 4em .5em 0em 0em 4em .5em 4.2em;
             .insert, .profile, .trumpet, .angles {
@@ -1419,7 +1504,7 @@
             display: none;
         }
         &-wrap {
-            grid-template-rows: 8vw auto 1.5em auto 1em auto 0em auto 4em;
+            grid-template-rows: 34vw auto 1.5em auto 1em auto 0 auto 4em;
         }
         &-subgrid {
             .subgrid-right {
@@ -1427,6 +1512,18 @@
             }
             .subgrid-layer {
                 width: 65%;
+            }
+        }
+    }
+    .decision {
+        &-wrap {
+            padding: 32vw 5vw 0;
+        }
+        .slick-dots {
+            margin-left: 4.2em;
+            width: 80%;
+            li {
+                margin: 0 2px;
             }
         }
     }
@@ -1447,9 +1544,28 @@
     .exit-layer {
         width: 310px;
     }
+    .data-overlay .processing-personal-data {
+        margin-top: 82em;
+        h3 {
+            font-size: 1.8em;
+        }
+    }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 340px) {
+    .promo-overlay {
+        grid-template-rows: 32vw 4em 7em 28vw 1em auto;
+    }
+    .calc {
+        grid-template-columns: 5vw .8fr .3fr 4vw;
+        grid-template-rows: 16.5vw auto .5em auto 1em auto .5em auto 6em;
+        &-sm-grid {
+            transform: translateX(0);
+        }
+    }
+    .value {
+        grid-template-rows: 8vw 1em 3em auto 4em;
+    }
     .check {
         .block-1, .block-2 {
             display: none;
@@ -1463,6 +1579,7 @@
     }
     .choice-wrap {
         grid-template-columns: 2vw 1fr 2vw;
+        grid-template-rows: 5vw auto 1.5em auto 1em auto 0 auto 4em;
         .subgrid-layer {
             display: none;
         }
@@ -1480,8 +1597,14 @@
         &-title {
             margin-bottom: 0.5em;
         }
+        &-wrap {
+            padding: 10vw 5vw 0;
+        }
     }
     .bank {
+        &-wrap {
+            padding: 2em 4em 0 4em;
+        }
         .footer {
             bottom: 34%;
             &-wrapper {
@@ -1501,5 +1624,8 @@
         .btn-bank {
             margin-top: 0.5em;
         }
+    }
+    .data-overlay .processing-personal-data {
+        margin-top: 100em;
     }
 }
