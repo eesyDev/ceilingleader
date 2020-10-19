@@ -953,6 +953,11 @@
         width: 65%;
         font-size: 1.4em;
     }
+    .header {
+        .nav-list-2 {
+            margin-bottom: 10vh;
+        }
+    }
     .promo {
         &-overlay {
             grid-template-rows: 20vw 17em 2em 17vw 1em auto;
@@ -1022,7 +1027,6 @@
         width: 100%;
         text-align: center;
         margin-left: 0;
-        padding-top: 3px;
     }
     .phone {
         padding: 1em;
@@ -1177,7 +1181,7 @@
     }
     .bank {
         &-wrap {
-            padding: 9em 4em 0 4em;
+            padding: 7em 4em 0 4em;
         }
         &-woman {
             display: none;
@@ -1195,6 +1199,7 @@
         .layer {
             width: 100%;
             height: 100px;
+            padding: .7em;
             img {
                 transform: translate(0, 9px);
                 width: 87px;
@@ -1214,7 +1219,7 @@
         .footer {
             padding: 0;
             padding-bottom: 0.5em;
-            bottom: 9%;
+            bottom: 6%;
             &-wrapper {
                 justify-content: space-between;
                 padding: 2em;
@@ -1264,6 +1269,15 @@
     .aside {
         display: none;
     }
+    .social-icons {
+        bottom: 3em;
+    }
+    .check-slider .slick-prev:before {
+        top: 3px;
+    }
+    .popup img {
+        width: 80%;
+    }
 }
 
 @media (max-width: 424px) {
@@ -1278,7 +1292,7 @@
             width: 47vw;
         }
         &-overlay {
-            grid-template-rows: 32vw 17em 2em 26vw 1em auto;
+            grid-template-rows: 38vw 17em 2em 26vw 1em auto;
             .title {
                 font-size: 2em;
             }
