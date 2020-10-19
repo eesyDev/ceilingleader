@@ -983,7 +983,7 @@
         width: 130px;
     }
     .calc {
-        grid-template-rows: 7.5vw auto .5em auto 1em auto .5em auto 6em;
+        grid-template-rows: 22.5vw auto .5em auto 1em auto .5em auto 6em;
         grid-template-columns: 3vw .8fr .3fr 3vw;
         overflow: hidden;
     }
@@ -1010,6 +1010,7 @@
     .calc-sm-grid {
         height: auto;
         grid-template-rows: 7em;
+        grid-template-columns: 1fr .5em 1fr .5em 1fr .5em 1fr;
         .block {
             width: 100%;
             img {
@@ -1021,6 +1022,7 @@
         width: 100%;
         text-align: center;
         margin-left: 0;
+        padding-top: 3px;
     }
     .phone {
         padding: 1em;
@@ -1144,7 +1146,7 @@
             }
         }
         &-wrap {
-            grid-template-rows: 8vw auto 1.5em auto 2em auto 2em auto 4em;
+            grid-template-rows: 26vw auto 1.5em auto 2em auto 2em auto 4em;
         }
     }
     .decision {
@@ -1152,7 +1154,7 @@
             text-align: center;
         }
         &-wrap {
-            padding: 12.5vw 5vw 0;
+            padding: 29.5vw 5vw 0;
             .woman {
                 display: none;
             }
@@ -1174,6 +1176,9 @@
         }
     }
     .bank {
+        &-wrap {
+            padding: 9em 4em 0 4em;
+        }
         &-woman {
             display: none;
         }
@@ -1209,7 +1214,7 @@
         .footer {
             padding: 0;
             padding-bottom: 0.5em;
-            bottom: 17%;
+            bottom: 9%;
             &-wrapper {
                 justify-content: space-between;
                 padding: 2em;
@@ -1273,7 +1278,7 @@
             width: 47vw;
         }
         &-overlay {
-            grid-template-rows: 22vw 17em 2em 26vw 1em auto;
+            grid-template-rows: 32vw 17em 2em 26vw 1em auto;
             .title {
                 font-size: 2em;
             }
@@ -1281,17 +1286,17 @@
     }
     .calc {
         &-sm-grid {
-            grid-template-rows: 8em;
+            grid-template-rows: 7em;
         }
     }
     .check {
         &-wrap {
-            grid-template-rows: 10vw auto 1.5em auto 2em auto 2em auto 4em;
+            grid-template-rows: 30vw auto 1.5em auto 2em auto 2em auto 4em;
         }
     }
     .value {
         grid-template-columns: 2em 1fr 2em;
-        grid-template-rows: 4vw 1em 3em auto 4em;
+        grid-template-rows: 32vw 1em 3em auto 4em;
         &-blocks {
             grid-template-rows: 4em .5em 4em .5em 4em .5em 4em .5em 4em .5em 4em .5em 4.2em;
         }
