@@ -25,11 +25,6 @@
             <ul class="nav-list-2">
                 <li class="cities city drop-item">
                     <a href="#" class="location-city">Тюмень</a>
-                    <ul class="dropdown">
-                        <li>Тюмень</li>
-                        <li>Нягань</li>
-                        <li>Ханты-Мансийск</li>
-                    </ul>
                 </li>
                 <li class="phones">
                     <a href="#" class="phone-1">8 922 002 46 16</a>
@@ -54,11 +49,6 @@
                 <ul class="nav-list-2">
                     <li class="cities city drop-item">
                         <a href="#" class="location-city">Тюмень</a>
-                        <ul class="dropdown">
-                            <li>Тюмень</li>
-                            <li>Нягань</li>
-                            <li>Ханты-Мансийск</li>
-                        </ul>
                     </li>
                     <li class="phones">
                         <a href="#" class="phone-1">8 922 002 46 16</a>
@@ -130,11 +120,6 @@
                     <ul class="nav-list-2">
                         <li class="cities drop-item">
                             <a href="#" class="location-city">Тюмень</a>
-                            <ul class="dropdown">
-                                <li>Тюмень</li>
-                                <li>Нягань</li>
-                                <li>Ханты-Мансийск</li>
-                            </ul>
                         </li>
                         <li class="phones">
                             <a href="#" class="phone-1 dark-a">8 922 002 46 16</a>
@@ -202,11 +187,6 @@
                     <ul class="nav-list-2">
                         <li class="cities drop-item">
                             <a href="#" class="location-city">Тюмень</a>
-                            <ul class="dropdown">
-                                <li>Тюмень</li>
-                                <li>Нягань</li>
-                                <li>Ханты-Мансийск</li>
-                            </ul>
                         </li>
                         <li class="phones">
                             <a href="#" class="phone-1">8 922 002 46 16</a>
@@ -352,11 +332,6 @@
                     <ul class="nav-list-2">
                         <li class="cities drop-item">
                             <a href="#" class="location-city">Тюмень</a>
-                            <ul class="dropdown">
-                                <li>Тюмень</li>
-                                <li>Нягань</li>
-                                <li>Ханты-Мансийск</li>
-                            </ul>
                         </li>
                         <li class="phones">
                             <a href="#" class="phone-1 dark-a">8 922 002 46 16</a>
@@ -597,11 +572,6 @@
                     <ul class="nav-list-2">
                         <li class="cities drop-item">
                             <a href="#" class="location-city">Тюмень</a>
-                            <ul class="dropdown">
-                                <li>Тюмень</li>
-                                <li>Нягань</li>
-                                <li>Ханты-Мансийск</li>
-                            </ul>
                         </li>
                         <li class="phones">
                             <a href="#" class="phone-1">8 922 002 46 16</a>
@@ -703,11 +673,6 @@
                     <ul class="nav-list-2">
                         <li class="cities drop-item">
                             <a href="#" class="location-city">Тюмень</a>
-                            <ul class="dropdown">
-                                <li>Тюмень</li>
-                                <li>Нягань</li>
-                                <li>Ханты-Мансийск</li>
-                            </ul>
                         </li>
                         <li class="phones">
                             <a href="#" class="phone-1 dark-a">8 922 002 46 16</a>
@@ -922,15 +887,19 @@
     <div class="modal-no-location">
         <div class="modal-blur"></div>
         <div class="location-layer">
-            <div class="location-upper">
-                <p>Ваш город </p>
-                <form method="POST">
-                    <input type="text" class="city" placeholder="City">
+            <div class="locarion-upper">
+                <p>Выберите город </p>
+                <form action="">
+                    <p>
+                        <select name="" id="cityselect">
+                            <option value="1">Тюмень</option>
+                            <option selected value="2">Нягань</option>
+                            <option value="3">Ханты-Мансийск</option>
+                        </select>
+                    </p>
                     <button class="btn location-confirm">Да</button>
                 </form>
             </div>
-            <br>
-            <p>Если нет, то введите Ваш город</p>
         </div>
     </div>
     <modal class="location-not-found">

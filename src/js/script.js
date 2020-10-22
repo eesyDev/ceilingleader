@@ -250,39 +250,24 @@ window.addEventListener('DOMContentLoaded', function() {
         }
     })
 
-    $(document).ready(function() {
-        if (YMaps.location){  
-            if (YMaps.location.city == ('Тюмень') || YMaps.location.city == ('Нягань') || YMaps.location.city == ('Ханты-Мансийск')) {
-                $(".city").val(YMaps.location.city)
-            } else {
-                $('.modal-no-location').fadeIn('fast');
-            }
-        } else {
-            $('.modal-no-location').fadeIn('fast');
-         };
+    // $(document).ready(function() {
+    //     if (YMaps.location){  
+    //         if (YMaps.location.city == ('Тюмень') || YMaps.location.city == ('Нягань') || YMaps.location.city == ('Ханты-Мансийск')) {
+    //             $(".city").val(YMaps.location.city)
+    //         } else {
+    //             $('.modal-no-location').fadeIn('fast');
+    //         }
+    //     } else {
+    //         $('.modal-no-location').fadeIn('fast');
+    //      };
             
-    });
-
-    $(document).ready(function() {
-        if (YMaps.location) // Проверяем, доступна ли геопозиция
-        { 
-            $('.modal-no-location').fadeIn('fast');
-            
-            $(".country").val(YMaps.location.country); // Достанем в input страну
-            $(".region").val(YMaps.location.region);   // Достанем в input регион (область)
-            $(".city").val(YMaps.location.city)        // Достанем в input город
-        } 
-        else
-            alert("Пожалуйста, разрешите доступ к использованию Вашей геопозиции!");
-    });
-    $(document).click(function(e) {
-        if (($(".modal-no-location").is(':visible')) && (!$(e.target).closest(".modal-no-location .location-layer").length)) {
-            $(".modal-no-location").remove();
-        }
-    });
-    $('.location-confirm').click(function() {
-        $(".modal-no-location").remove();
-    })
+    // });
+    // $(document).click(function(e) {
+    //     if (($(".modal-no-location").is(':visible')) && (!$(e.target).closest(".modal-no-location .location-layer").length)) {
+    //         $(".modal-no-location").remove();
+    //     }
+    // });
+   
 
 
     $('form').submit(function(e) {
@@ -315,44 +300,24 @@ window.addEventListener('DOMContentLoaded', function() {
     });
 
     $(document).ready(function() {
-        if (YMaps.location) // Проверяем, доступна ли геопозиция
-        { 
-            $('.modal-no-location').fadeIn('fast');
-            $(".city").val(YMaps.location.city);
-            
-        } 
-        else
-            alert("Пожалуйста, разрешите доступ к использованию Вашей геопозиции!");
+        $('.modal-no-location').fadeIn('fast');
     });
     $('.location-confirm').click(function() {
+        let textSelect = $('#cityselect option:selected').text();
+        let valueSelect = $('#cityselect').val();
         $(".modal-no-location").remove();
-        $(".location-city").html(YMaps.location.city);
-    })
-
-    $(document).ready(function() {
-        if (YMaps.location){  
-            if (YMaps.location.city == ('Тюмень')) {
-                $(".phone-1").html('8 922 002 46 16');
-                $(".phone-2").html('8 3452 60 15 60');
-            } else if (YMaps.location.city == ('Нягань')){
-                $(".phone-1").html('8 000 000 00 00');
-                $(".phone-2").html('8 111 111 11 11');
-            } else if (YMaps.location.city == ('Ханты-Мансийск')) {
-                $(".phone-1").html('8 222 222 22 22');
-                $(".phone-2").html('8 333 333 33 33');
-            } else if (YMaps.location.city == ('Алматы')) {
-                $(".phone-1").html('8 77777777777');
-                $(".phone-2").html('8 77777777777');
-            }
-        } else {
-            $(".location-not-found").fadeIn('fast');
-         };
-            
-    });
-    $(document).click(function(e) {
-        if (($(".location-not-found").is(':visible')) && (!$(e.target).closest(".location-not-found .location-layer").length)) {
-            $(".location-not-found").remove();
+        $('.location-city').html(textSelect);
+        if (valueSelect == 1) {
+            $(".phone-1").html('8 922 002 46 16');
+            $(".phone-2").html('8 3452 60 15 60');
+        } else if (valueSelect == 2) {
+            $(".phone-1").html('8 952 687 32 63');
+            $(".phone-2").html('8 346 722 42 61');
+        } else if (valueSelect == 3) {
+            $(".phone-1").html('8 952 687 32 63');
+            $(".phone-2").html('8 346 729 99 29');
         }
+        
     });
 
     var mySwiper = new Swiper('.swiper-container', {

@@ -101,8 +101,6 @@
                     width: 340px;
                 }
             }
-            .slide {
-            }
         }
     }
     .calc {
@@ -1230,11 +1228,16 @@
         }
         .slick-dots {
             top: -25px;
-            width: 74%;
-            margin-left: 5.2em;
+            width: 96%;
+            margin-left: 0.5em;
             li {
                 margin: 0 1px;
-                font-size: 0.5em;
+                font-size: 0.7em;
+            }
+        }
+        &-wrap {
+            .type {
+                display: none;
             }
         }
     }
@@ -1399,8 +1402,8 @@
     }
     .decision {
         .slick-dots {
-            width: 92%;
-            margin-left: 1em;
+            width: 95%;
+            margin-left: 0.5em;
         }
         .slick-dots li {
             margin: 0 5px;
@@ -1436,7 +1439,7 @@
         }
     }
 }
-
+}
 @media (max-width: 374px) {
     section {
         overflow: hidden;
@@ -1529,8 +1532,7 @@
             padding: 32vw 5vw 0;
         }
         .slick-dots {
-            margin-left: 4.2em;
-            width: 80%;
+
             li {
                 margin: 0 2px;
             }

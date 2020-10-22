@@ -15,6 +15,14 @@ $yellow: #ffd04f;
     height: 100vh;
 }
 
+#cityselect {
+    width: 40%;
+    height: 5vh;
+    border-radius: 17px;
+    margin: 2em 0;
+    outline: none;
+}
+
 .header-mobile {
     display: none;
 }
@@ -355,7 +363,7 @@ input {
         display: grid;
         grid-template-areas: ". . . . . . . ."
                              ". Logo . Navigation . Navigation-2  Navigation-2 . ";
-        grid-template-columns: 0.08fr 0.15fr 3em 1.2fr 0.5fr 0.2fr 0.40fr 2em;
+        grid-template-columns: 0.08fr 0.15fr 3em 1.2fr 0.5fr 0.2fr 0.5fr 2em;
         grid-template-rows: 1em auto;
         color: #ffffff;
         font-weight: 400;
