@@ -162,8 +162,14 @@
         }
         &-slider {
             .slick-prev {
-                left: 91%;
+                left: 78%;
                 top: 11%;
+            }
+            .slick-next {
+                top: 11%;
+            }
+            .slide-btn {
+                top: -6% !important;
             }
         }
         &-subtitle {

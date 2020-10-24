@@ -26,8 +26,30 @@ window.addEventListener('DOMContentLoaded', function() {
     });
     $('.check-slider').slick({
         slideToShow: 1,
-        prevArrow: '<button type="button" class="slick-prev"><img src="icons/chevron.png">Назад</button>',
+        prevArrow: '<button type="button" class="slick-prev"><img src="icons/chevron-left.png">Назад</button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="icons/chevron-right.png"></button>',
     });
+
+    let currentArticle = $('.check-slider').slick('slickCurrentSlide');
+    let totalArticles = $('.check-slider').slideCount;
+    $('.check-slider').on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){
+        currentArticle = $('.check-slider').slick('slickCurrentSlide');
+        totalArticles = slick.slideCount;
+        slickArrow();
+    });
+    slickArrow();
+    function slickArrow() {  
+        if(currentArticle==0){
+           $('.slick-prev').hide();
+        }else{
+           $('.slick-prev').show();
+        }
+        if (currentArticle==totalArticles){
+            $('.slick-next').hide();
+        }else{
+            $('.slick-next').show();
+        }
+    }
 
     const dropItem = document.querySelectorAll('.drop-item');
 
@@ -63,12 +85,18 @@ window.addEventListener('DOMContentLoaded', function() {
     });
 
     const range = document.getElementById('range'),
+          priceFrom = document.querySelector('.price-from'),
+          priceTo = document.querySelector('.price-to'),
           square = document.querySelector('.square');
     square.innerHTML = range.value + ' м²';
+    priceFrom.innerHTML = range.value * 166;
+    priceTo.innerHTML = range.value * 222;
 
     range.addEventListener('input', function() {
         square.innerHTML = this.value + ' м²';
-    })
+        priceFrom.innerHTML = this.value * 166;
+        priceTo.innerHTML = this.value * 222;
+    });
     
     
     const plusBtn = document.querySelectorAll('.plus'),
@@ -328,12 +356,17 @@ window.addEventListener('DOMContentLoaded', function() {
         adaptiveHeight: true
     });
     
-    const checkedImg = document.querySelectorAll('.img-grid');
+    const checkedImg = document.querySelectorAll('.img-grid-c');
 
     checkedImg.forEach(item => {
         item.addEventListener('click', () => {
             item.classList.toggle('img-grid-checked');
         })
+    });
+
+    $('.img-grid-r').click(function() {
+        $('.img-grid-r.img-grid-checked').removeClass('img-grid-checked');
+        $(this).addClass('img-grid-checked');
     });
 });
 

@@ -895,11 +895,17 @@ input[type='range']::-webkit-slider-thumb {
        .check-slide {
         display: flex;
         width: 100%;
+        margin-top: 2em;
+        position: relative;
         .img-grid {
             width: 100%;
             margin-top: 3em;
+            position: relative;
             .checked {
                 opacity: 0;
+                width: 35%;
+                position: absolute;
+                top: -5%;
             }
             img {
                 width: 72%;
@@ -931,12 +937,20 @@ input[type='range']::-webkit-slider-thumb {
                 color: #dbdbdb;
             }
         }
+        .slide-btn {
+            position: absolute;
+            right: 2%;
+            top: -1%;
+            width: 10%;
+            height: 15%;
+            padding: 0.3em 0.8em;
+        }
         .back {
             position: absolute;
         }
        }
        .slick-prev {
-           left: 88%;
+           left: 79%;
            top: 16%;
            margin-right: 0.5em;
            z-index: 9999;
@@ -944,13 +958,22 @@ input[type='range']::-webkit-slider-thumb {
                content: "Назад";
                color: #000;
                position: absolute;
-               margin-left: 1em;
+               margin-left: 1.5em;
                top: 0;
                font-family: 'Magistral';
            }
        }
        .slick-next {
-           opacity: 0;
+           top: 16%;
+           right: 4%;
+            &:before {
+                content: "Вперед";
+                color: #000;
+                position: absolute;
+                margin-left: -3.5em;
+                top: 0;
+                font-family: 'Magistral';
+            }
        }
    }
    &-layer {
