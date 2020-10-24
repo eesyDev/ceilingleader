@@ -47,6 +47,9 @@
             top: 35%;
         }
     }
+    #cityselect {
+        font-size: 20px;
+    }
 }
 
 @media(min-width: 1900px) {
@@ -70,7 +73,8 @@
         }
         .nav-list-2 {
             .cities {
-                margin-left: 1.2em;
+                margin-left: .2em;
+                margin-right: 1em;
             }
         }
     }
@@ -108,6 +112,9 @@
         grid-template-rows: 6.5em auto .5em auto 1em auto 1em auto 4em;
         &-sm-grid {
             width: 100%;
+            .block {
+                border-radius: 19px;
+            }
         }
         &-layer {
             height: 231px;
@@ -187,12 +194,28 @@
             .choice-item {
                 padding: 3em;
                 p {
-                    font-size: 16px;
+                    font-size: 19px;
+                }
+                img {
+                    margin: 0.7em 0 1.3em;
                 }
             }
         }
-        &-item .subtitle {
-            font-size: 16px;
+        &-item {
+            .subtitle {
+                font-size: 19px;
+            }
+            img {
+                
+            }
+        }
+        &-subgrid {
+            .subgrid-layer .sub-form .phone-input {
+                font-size: 19px;
+                &::placeholder {
+                    font-size: 19px;
+                }
+            }
         }
         .personal-data {
             font-size: 0.8em;
@@ -268,6 +291,12 @@
             margin-bottom: 25px;
             align-items: flex-start;
         }
+        .layer-form form input {
+            font-size: 19px;
+            &::placeholder {
+                font-size: 19px;
+            }
+        }
     }
     .footer {
         padding: 3em 24em 3em 22em;
@@ -290,6 +319,28 @@
     .data-overlay .processing-personal-data {
         margin-top: 2em;
     }
+    #cityselect {
+        font-size: 23px;
+    }
+    .exit-layer {
+        .phone-input {
+            padding: 1em;
+            font-size: 19px;
+            &::placeholder {
+                font-size: 21px;
+            }
+        }
+        form {
+            align-items: flex-start;
+        }
+    }
+    .value .phone-input {
+        font-size: 19px;
+        padding: 0.5em;
+        &::placeholder {
+            font-size: 20px;
+        }
+    }
 }
 
 
@@ -298,7 +349,7 @@
         display: none;
     }
     .modal-no-location .location-layer {
-        width: 75%;
+        width: 50%;
     }
     .bank {
         &-wrap {
@@ -475,6 +526,9 @@
     }
     .aside {
         left: -130px;
+    }
+    .modal-no-location .location-layer {
+        padding: 50px;
     }
 }
 
@@ -704,6 +758,9 @@
         h3 {
             font-size: 2.7em;
         }
+    }
+    .location-confirm {
+        height: 55px;
     }
 }
 
@@ -968,7 +1025,7 @@
     }
     .modal-no-location .location-layer {
         padding: 25px;
-        width: 90%;
+        width: 60%;
         height: 30%;
     }
     .modal-no-location .location-upper form {
@@ -1319,7 +1376,7 @@
         }
     }
     .modal-no-location .location-layer {
-        height: 50%;
+        width: 80%;
     }
     
     .exit-layer {

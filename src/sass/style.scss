@@ -16,11 +16,16 @@ $yellow: #ffd04f;
 }
 
 #cityselect {
-    width: 40%;
+    width: 100%;
     height: 5vh;
     border-radius: 17px;
-    margin: 2em 0;
+    margin: 1em 0;
     outline: none;
+    padding: 0 10px;
+    font-size: 19px;
+}
+.location-confirm {
+    width: 100% !important;
 }
 
 .header-mobile {
@@ -59,7 +64,7 @@ input[type='range']::-webkit-slider-thumb {
 .phone-input {
     border: 2px solid #bdbdbd;
     border-radius: 17px;
-    padding: 1em 2.5em 1em 2.5em;
+    padding: 1em 1.5em 1em 1.5em;
     margin-top: 0.4em;
 }
 .personal-data {
@@ -155,11 +160,11 @@ button {
             background-color: #fff;
             padding: 100px;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             flex-direction: column;
             border-radius: 17px;
             box-shadow: 0 4px 10px 2px rgba(0,0,0,0.5);
-            width: 50%;
+            width: 35%;
             height: 50%;
             left: 50%;
             top: 50%;
@@ -174,19 +179,27 @@ button {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-direction: column;
             form {
-                width: 70%;
+                width: 100%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                flex-direction: column;
                 input {
                     border: none;
                     font-size: 20px;
                     width: 40%;
                 }
+                p {
+                    padding-left: 10px;
+                }
             }
             p {
-                width: 20%;
+                width: 100%;
+                &:nth-child(1) {
+                    padding-left: 10px;
+                }
             }
         }
     }
@@ -343,6 +356,7 @@ input {
     }
     .nav-list-2 {
         .cities {
+            margin-right: 1em;
             a {
                 color: #000 !important;
             }
@@ -884,6 +898,9 @@ input[type='range']::-webkit-slider-thumb {
         .img-grid {
             width: 100%;
             margin-top: 3em;
+            .checked {
+                opacity: 0;
+            }
             img {
                 width: 72%;
                 z-index: 9;
@@ -895,6 +912,11 @@ input[type='range']::-webkit-slider-thumb {
             p {
                 margin-top: 1em;
                 text-align: center;
+            }
+        }
+        .img-grid-checked {
+            .checked {
+                opacity: 1;
             }
         }
         .counter {
@@ -1047,7 +1069,7 @@ input[type='range']::-webkit-slider-thumb {
                     height: 55px;
                     border: 2px solid #bdbdbd;
                     border-radius: 17px;
-                    padding: 1em 0.5em 1em 2.5em;
+                    font-size: 15px;
                 }
             }
         }
@@ -1267,6 +1289,7 @@ input[type='range']::-webkit-slider-thumb {
                     margin: 20px 0;
                     width: 90%;
                     height: 55px;
+                    font-size: 15px;
                 }
             }
         }
