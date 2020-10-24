@@ -44,7 +44,7 @@ window.addEventListener('DOMContentLoaded', function() {
         }else{
            $('.slick-prev').show();
         }
-        if (currentArticle==totalArticles){
+        if (currentArticle==totalArticles-1){
             $('.slick-next').hide();
         }else{
             $('.slick-next').show();
@@ -353,7 +353,8 @@ window.addEventListener('DOMContentLoaded', function() {
         mousewheel: true,
         keyboard: true,
         speed: 500,
-        adaptiveHeight: true
+        adaptiveHeight: true,
+        shortSwipes: false,
     });
     
     const checkedImg = document.querySelectorAll('.img-grid-c');

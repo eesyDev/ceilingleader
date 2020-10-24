@@ -353,7 +353,8 @@ window.addEventListener('DOMContentLoaded', function() {
         mousewheel: true,
         keyboard: true,
         speed: 500,
-        adaptiveHeight: true
+        adaptiveHeight: true,
+        shortSwipes: false,
     });
     
     const checkedImg = document.querySelectorAll('.img-grid-c');
