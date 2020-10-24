@@ -327,5 +327,13 @@ window.addEventListener('DOMContentLoaded', function() {
         speed: 500,
         adaptiveHeight: true
     });
+    
+    const checkedImg = document.querySelectorAll('.img-grid');
+
+    checkedImg.forEach(item => {
+        item.addEventListener('click', () => {
+            item.classList.toggle('img-grid-checked');
+        })
+    });
 });
 
