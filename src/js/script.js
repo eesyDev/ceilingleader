@@ -203,7 +203,7 @@ window.addEventListener('DOMContentLoaded', function() {
             }
         });
     };
-    images();
+    // images();
 
     const dataLinks = document.querySelectorAll('.p-data'),
           dataOverlay = document.querySelector('.data-overlay');

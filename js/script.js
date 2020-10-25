@@ -174,36 +174,36 @@ window.addEventListener('DOMContentLoaded', function() {
     //         })
     //     })(i);
     //  };
-     const images = () => {
-        const imgPopup = document.createElement('div'),
-              workSection = document.querySelector('.calc-sm-grid'),
-              bigImage = document.createElement('img');
+    //  const images = () => {
+    //     const imgPopup = document.createElement('div'),
+    //           workSection = document.querySelector('.calc-sm-grid'),
+    //           bigImage = document.createElement('img');
     
-        imgPopup.classList.add('popup');
-        workSection.appendChild(imgPopup);
+    //     imgPopup.classList.add('popup');
+    //     workSection.appendChild(imgPopup);
     
-        imgPopup.style.justifyContent = 'center';
-        imgPopup.style.alignItems = 'center';
-        imgPopup.style.display = 'none';
+    //     imgPopup.style.justifyContent = 'center';
+    //     imgPopup.style.alignItems = 'center';
+    //     imgPopup.style.display = 'none';
     
-        imgPopup.appendChild(bigImage);
+    //     imgPopup.appendChild(bigImage);
     
-        workSection.addEventListener('click', (e) => {
-            e.preventDefault();
+    //     workSection.addEventListener('click', (e) => {
+    //         e.preventDefault();
     
-            let target = e.target;
+    //         let target = e.target;
     
-            if (target && target.classList.contains('preview')) {
-                imgPopup.style.display = 'flex';
-                const path = target.parentNode.getAttribute('href');
-                bigImage.setAttribute('src', path);
-            }
-            if(target && target.matches('div.popup')) {
-                imgPopup.style.display = 'none';
-            }
-        });
-    };
-    images();
+    //         if (target && target.classList.contains('preview')) {
+    //             imgPopup.style.display = 'flex';
+    //             const path = target.parentNode.getAttribute('href');
+    //             bigImage.setAttribute('src', path);
+    //         }
+    //         if(target && target.matches('div.popup')) {
+    //             imgPopup.style.display = 'none';
+    //         }
+    //     });
+    // };
+    // images();
 
     const dataLinks = document.querySelectorAll('.p-data'),
           dataOverlay = document.querySelector('.data-overlay');

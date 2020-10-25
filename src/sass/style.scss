@@ -947,6 +947,15 @@ input[type='range']::-webkit-slider-thumb {
                 text-align: center;
             }
         }
+        .img-grid-double {
+            .checked {
+                width: 25%;
+                top: -11%;
+            }
+            .white {
+                border: 1px solid #000;
+            }
+        }
         .img-grid-checked {
             .checked {
                 opacity: 1;
