@@ -562,11 +562,11 @@ input {
             background-size: cover;
         }
         .slide-2 {
-            background-image: url('../img/boxes.png');
+            background-image: url('../img/boxes.jpg');
             background-size: cover;
         }
         .slide-3 {
-            background-image: url('../img/img_fir_sc.png');
+            background-image: url('../img/img_fir_sc.jpg');
             background-size: cover;
         }
         .slick-prev, .slick-next {
@@ -857,7 +857,7 @@ input[type='range']::-webkit-slider-thumb {
             background-color: #fff;
             border: 1px solid #000;
             width: 100%;
-            padding: 1em;
+            padding: 0 0 1em;
             z-index: 3;
             border: none;
             outline: none;
@@ -918,72 +918,83 @@ input[type='range']::-webkit-slider-thumb {
             height: 100px;
         }
     }
-   &-slider {
+    &-slider {
        .check-slide {
-        display: flex;
-        width: 100%;
-        margin-top: 2em;
-        position: relative;
-        .img-grid {
+            display: flex;
             width: 100%;
-            margin-top: 3em;
+            margin-top: 1em;
             position: relative;
-            .checked {
-                opacity: 0;
-                width: 35%;
-                position: absolute;
-                top: -5%;
-            }
-            img {
-                width: 72%;
-                z-index: 9;
-                margin: 0 auto;
-                &:hover {
-                    transform: scale(1.1)
+            .img-grid {
+                width: 100%;
+                margin-top: 4em;
+                position: relative;
+                .checked {
+                    opacity: 0;
+                    width: 35%;
+                    position: absolute;
+                    top: -5%;
+                }
+                img {
+                    width: 72%;
+                    z-index: 9;
+                    margin: 0 auto;
+                    &:hover {
+                        transform: scale(1.1)
+                    }
+                }
+                p {
+                    margin-top: .5em;
+                    text-align: center;
                 }
             }
-            p {
-                margin-top: 1em;
-                text-align: center;
+            .img-grid-double {
+                .checked {
+                    width: 20%;
+                    top: -10%;
+                    left: 5%;
+                }
+                .white {
+                    border: 1px solid #000;
+                }
             }
-        }
-        .img-grid-double {
-            .checked {
-                width: 25%;
-                top: -11%;
+            .img-grid-checked {
+                .checked {
+                    opacity: 1;
+                }
             }
-            .white {
-                border: 1px solid #000;
+            .counter {
+                position: absolute;
+                top: 0;
+                z-index: 999;
+                .count-beg {
+                    font-size: 1.3em;
+                }
+                .count-end {
+                    font-size: 1.3em;
+                    color: #dbdbdb;
+                }
             }
-        }
-        .img-grid-checked {
-            .checked {
-                opacity: 1;
+            .slide-btn {
+                width: 10em;
+                height: 100%;
             }
-        }
-        .counter {
-            position: absolute;
-            top: 0;
-            z-index: 999;
-            .count-beg {
-                font-size: 1.3em;
+            .check-numberinput {
+                margin: 6em auto 0;
+                input {
+                    width: 25em;
+                    height: 5em;
+                    border: 1px solid #bdbdbd;
+                    border-radius: 15px;
+                    padding: 0 25px;
+                    margin-right: 5em;
+                    &::placeholder {
+                        font-size: 18px;
+                    }
+                }
             }
-            .count-end {
-                font-size: 1.3em;
-                color: #dbdbdb;
+            .back {
+                position: absolute;
             }
-        }
-        .slide-btn {
-            position: absolute;
-            right: 2%;
-            top: -4%;
-            width: 12%;
-            height: 16%;
-            padding: 0.3em 0.8em;
-        }
-        .back {
-            position: absolute;
-        }
        }
        .slick-prev {
            left: 73%;
